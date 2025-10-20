@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     "Professional portfolio of <Hashir />, a passionate full-stack developer specializing in React, Node.js, and modern web technologies.",
   generator: "v0.app",
   icons: {
-    icon: "/ChatGPT Image Aug 26, 2025, 12_52_42 PM",
-    shortcut: "/ChatGPT Image Aug 26, 2025, 12_52_42 PM.png",
-    apple: "/ChatGPT Image Aug 26, 2025, 12_52_42 PM.png",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
 };
 
