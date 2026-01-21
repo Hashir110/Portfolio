@@ -205,7 +205,7 @@ export default function Portfolio() {
     delaySpeed: 3500,
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -408,7 +408,7 @@ export default function Portfolio() {
           </div>
         )}
       </header>
-      
+
 
       {/* Hero Section */}
       <section id="hero" className="relative py-24 px-4 overflow-hidden">
@@ -1745,6 +1745,7 @@ export default function Portfolio() {
                     <label htmlFor="name" className={themeStyles.muted}>
                       Name
                     </label>
+                    <input type="hidden" name="project_name" value="My Portfolio Website" />
                     <input
                       type="text"
                       id="name"
