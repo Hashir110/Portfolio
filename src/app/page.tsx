@@ -30,6 +30,7 @@ import {
   Clock,
   Menu,
   ChevronUp,
+  Download,
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useTypewriter } from "react-simple-typewriter";
@@ -324,18 +325,28 @@ export default function Portfolio() {
           </nav>
 
           {/* Right Side - Theme Toggle */}
-          <div className="flex items-center">
+          <div className="flex items-center gap-2">
+            {/* Resume Download Button */}
+            <Button
+              variant="outline"
+              size="sm"
+              asChild
+              className={`hidden sm:flex items-center gap-2 border-amber-500/50 hover:bg-amber-100 transition-all duration-300 rounded-full px-4 ${themeStyles.text}`}
+            >
+              <a href="/Muhammad Hashir's Resume.pdf" download="Muhammad Hashir's Resume.pdf">
+                <Download className="w-4 h-4" />
+                <span>Resume</span>
+              </a>
+            </Button>
+
+            {/* Theme Toggle Button */}
             <Button
               variant="ghost"
               size="sm"
               onClick={toggleTheme}
               className={`hover:bg-amber-500/10 rounded-full p-2 cursor-pointer ${themeStyles.text} transition-all duration-300`}
             >
-              {isDarkMode ? (
-                <Sun className="w-5 h-5" />
-              ) : (
-                <Moon className="w-5 h-5" />
-              )}
+              {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </Button>
 
             {/* Mobile Menu Button */}
@@ -343,11 +354,7 @@ export default function Portfolio() {
               onClick={() => setIsOpen(!isOpen)}
               className="md:hidden p-2 ml-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
             >
-              {isOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className="h-6 w-6" />
-              )}
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
         </div>
@@ -1752,7 +1759,8 @@ export default function Portfolio() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-border rounded-lg bg-input focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300"
+                      // Updated: Orange border default, Dark Orange border + ring on focus
+                      className="w-full px-4 py-3 border border-orange-500 rounded-lg bg-input focus:outline-none focus:ring-2 focus:ring-orange-700/50 focus:border-orange-700 transition-all duration-300"
                       placeholder="Your name"
                       required
                     />
@@ -1768,7 +1776,8 @@ export default function Portfolio() {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-border rounded-lg bg-input focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300"
+                      // Updated: Orange border default, Dark Orange border + ring on focus
+                      className="w-full px-4 py-3 border border-orange-500 rounded-lg bg-input focus:outline-none focus:ring-2 focus:ring-orange-700/50 focus:border-orange-700 transition-all duration-300"
                       placeholder="your.email@example.com"
                       required
                     />
@@ -1784,11 +1793,13 @@ export default function Portfolio() {
                       value={formData.message}
                       onChange={handleChange}
                       rows={4}
-                      className="w-full px-4 py-3 border border-border rounded-lg bg-input focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300"
+                      // Updated: Orange border default, Dark Orange border + ring on focus
+                      className="w-full px-4 py-3 border border-orange-500 rounded-lg bg-input focus:outline-none focus:ring-2 focus:ring-orange-700/50 focus:border-orange-700 transition-all duration-300"
                       placeholder="Tell me about your project..."
                       required
                     />
                   </div>
+
 
                   <Button
                     type="submit"
