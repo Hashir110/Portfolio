@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     "Professional portfolio of <Hashir />, a passionate full-stack developer specializing in React, Node.js, and modern web technologies.",
   generator: "v0.app",
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 };
 
@@ -43,6 +43,7 @@ export default function RootLayout({
         <link rel="icon" href="/ChatGPT Image Aug 26, 2025, 12_52_42 PM.png"/>
       </head>
       <body className="font-sans">{children}</body>
+      
     </html>
   );
 }

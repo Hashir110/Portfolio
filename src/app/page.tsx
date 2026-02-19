@@ -31,11 +31,14 @@ import {
   Menu,
   ChevronUp,
   Download,
+  Bot,
+  Send,
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useTypewriter } from "react-simple-typewriter";
 import { Cursor } from "react-simple-typewriter";
 import emailjs from "@emailjs/browser";
+// import ChatAssistant from "@/components/ui/chatComponent";
 
 export default function Portfolio() {
   const [isOpen, setIsOpen] = useState(false);
@@ -269,7 +272,7 @@ export default function Portfolio() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="font-serif font-bold text-xl bg-gradient-to-r from-gray-400 via-primary to-amber-800  bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
+          <div className="font-serif font-bold text-xl hover:cursor-pointer bg-gradient-to-r from-gray-400 via-primary to-amber-800  bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
             &lt; Hashir <span className="text-amber-600">/</span> &gt;
           </div>
 
@@ -411,7 +414,17 @@ export default function Portfolio() {
                 Contact
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </a>
+              <a
+                href="/Muhammad Hashir's Resume.pdf" download="Muhammad Hashir's Resume.pdf"
+                className="mt-2 flex items-center gap-2 px-6 py-2 bg-amber-500 text-white rounded-full "
+                onClick={() => setIsOpen(false)}
+              >
+                <Download className="w-4 h-4" />
+                Download Resume
+              </a>
             </nav>
+
+
           </div>
         )}
       </header>
@@ -1843,6 +1856,8 @@ export default function Portfolio() {
           <ChevronUp className="h-5 w-5" />
         </button>
       )}
+
+     {/* <ChatAssistant /> */}
 
       <div
         className={`fixed bottom-4 right-4 px-3 py-1 rounded-full text-xs font-medium transition-all duration-300 ${isDarkMode ? "bg-green-500 text-white" : "bg-blue-500 text-white"
