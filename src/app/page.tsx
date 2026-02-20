@@ -38,7 +38,6 @@ import { useEffect, useRef, useState } from "react";
 import { useTypewriter } from "react-simple-typewriter";
 import { Cursor } from "react-simple-typewriter";
 import emailjs from "@emailjs/browser";
-// import ChatAssistant from "@/components/ui/chatComponent";
 
 export default function Portfolio() {
   const [isOpen, setIsOpen] = useState(false);
@@ -1857,7 +1856,6 @@ export default function Portfolio() {
         </button>
       )}
 
-     {/* <ChatAssistant /> */}
 
       <div
         className={`fixed bottom-4 right-4 px-3 py-1 rounded-full text-xs font-medium transition-all duration-300 ${isDarkMode ? "bg-green-500 text-white" : "bg-blue-500 text-white"
