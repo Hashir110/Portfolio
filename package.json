@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "npx serve@latest out",
     "lint": "eslint",
-    "export": "next build && next export"
+    "export": "next build"
   },
   "dependencies": {
     "@ai-sdk/google": "^3.0.29",
