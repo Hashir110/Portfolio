@@ -18,9 +18,9 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Home | Muhammad <Hashir /> - Full Stack Developer",
+  title: "Home | Muhammad <Hashir /> - Full Stack Engineer",
   description:
-    "Professional portfolio of <Hashir />, a passionate full-stack developer specializing in React, Node.js, and modern web technologies.",
+    "Professional portfolio of <Hashir />, a passionate full-stack engineer specializing in React, Node.js, and modern web technologies.",
   generator: "v0.app",
   icons: {
     icon: "/favicon.ico",

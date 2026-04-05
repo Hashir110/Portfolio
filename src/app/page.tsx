@@ -86,10 +86,10 @@ export default function Portfolio() {
     const sections = [
       {
         id: "hero",
-        title: "< Hashir /> - Full Stack Developer",
+        title: "< Hashir /> - Full Stack Engineer",
         icon: "/favicon.png",
         description:
-          "Professional portfolio of < Hashir />, a passionate full-stack developer specializing in React, Node.js, and modern web technologies.",
+          "Professional portfolio of < Hashir />, a passionate full-stack engineer specializing in React, Node.js, and modern web technologies.",
       },
       {
         id: "about",
@@ -97,7 +97,7 @@ export default function Portfolio() {
         icon: "/favicon.png",
 
         description:
-          "Learn more about < Hashir />, their experience, skills, and passion for full-stack development and modern web technologies.",
+          "Learn more about < Hashir />, their experience, skills, and passion for full-stack engineering and modern web technologies.",
       },
       {
         id: "skills",
@@ -200,7 +200,7 @@ export default function Portfolio() {
     words: [
       "Web Developer",
       "Mobile App Developer",
-      "Full Stack Developer",
+      "Full Stack Engineer",
     ],
     loop: 0,
     typeSpeed: 80,
@@ -510,9 +510,9 @@ export default function Portfolio() {
                 About Me
               </h2>
               <p className={`${themeStyles.muted} text-lg leading-relaxed`}>
-                With over 1+ years of experience in full-stack development, I
-                specialize in building modern web applications using React,
-                Node.js, and cloud technologies. I'm passionate about clean
+                With over 1.5+ years of experience in full-stack engineering, I
+                specialize in building modern web applications using React, Next.js,
+                Nest.js, PostgreSQL, and cloud technologies. I'm passionate about clean
                 code, user experience, and continuous learning.
               </p>
               <p className={`${themeStyles.muted} text-lg leading-relaxed`}>
@@ -557,8 +557,8 @@ export default function Portfolio() {
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-amber-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
               <img
-                src="/IMG_1614.JPG"
-                alt="Developer workspace"
+                src="/Hashir.jpeg"
+                alt="Hashir Coding"
                 className="relative rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]"
               />
             </div>
