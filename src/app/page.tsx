@@ -510,10 +510,7 @@ export default function Portfolio() {
                 About Me
               </h2>
               <p className={`${themeStyles.muted} text-lg leading-relaxed`}>
-                With over 1.5+ years of experience in full-stack engineering, I
-                specialize in building modern web applications using React, Next.js,
-                Nest.js, PostgreSQL, and cloud technologies. I'm passionate about clean
-                code, user experience, and continuous learning.
+                Currently, I am a Full Stack Developer at <a href="https://www.linkedin.com/company/samarix/posts/?feedView=all" target="_blank" className="text-yellow-600 underline">Samarix</a> with over 2 years of overall experience building modern web applications using React, Next.js, Nest.js, PostgreSQL, and cloud technologies. I am passionate about clean code, exceptional user experiences, and continuous learning.
               </p>
               <p className={`${themeStyles.muted} text-lg leading-relaxed`}>
                 I believe in the power of technology to solve complex problems
@@ -801,6 +798,7 @@ export default function Portfolio() {
                 </Button>
               </CardContent>
             </Card>
+
 
             {/* Mobile App Development Service */}
             <Card
@@ -1572,6 +1570,50 @@ export default function Portfolio() {
         </div>
       </section>
 
+      {/* Industry Experience Section */}
+      <section id="industry-experience" className="py-24 px-4 bg-gradient-to-r from-card/50 to-muted/30">
+        <div className="container max-w-6xl mx-auto">
+          <h2 className="font-serif font-bold text-4xl md:text-5xl mb-8 bg-gradient-to-r from-gray-800 via-primary to-amber-600 bg-clip-text text-transparent">
+            Industry Experience
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className={`border-0 ${themeStyles.card} shadow-lg hover:shadow-3xl hover:scale-105 transition-all duration-500`}>
+              <CardHeader>
+                <CardTitle className={`font-serif text-xl hover:text-amber-700 cursor-pointer transition-colors duration-300 ${themeStyles.text}`}>Samarix</CardTitle>
+                <CardDescription className={`text-base ${themeStyles.muted}`}>Full Stack Developer – Present</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className={`${themeStyles.muted}`}>Contributed to the AI‑driven website projects, handling frontend features.</p>
+              </CardContent>
+            </Card>
+            <Card className={`border-0 ${themeStyles.card} shadow-lg hover:shadow-3xl hover:scale-105 transition-all duration-500`}>
+              <CardHeader>
+                <CardTitle className={`font-serif text-xl hover:text-amber-700 cursor-pointer transition-colors duration-300 ${themeStyles.text}`}>Zetsol Technologies</CardTitle>
+                <CardDescription className={`text-base ${themeStyles.muted}`}>Frontend Internship – 3 months</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className={`${themeStyles.muted}`}>Developed Zetsol’s official website, creating landing pages and admin panels, gaining 3+ months of real‑world frontend experience on live projects.</p>
+              </CardContent>
+            </Card>
+            <Card className={`border-0 ${themeStyles.card} shadow-lg hover:shadow-3xl hover:scale-105 transition-all duration-500`}>
+              <CardHeader>
+                <CardTitle className={`font-serif text-xl hover:text-amber-700 cursor-pointer transition-colors duration-300 ${themeStyles.text}`}>Zetsol Technologies</CardTitle>
+                <CardDescription className={`text-base ${themeStyles.muted}`}>Full Stack Developer – 1 year</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className={`${themeStyles.muted}`}>Full‑stack developer since Apr 2025, building production apps with NestJS, React/Next.js and React Native. Contributed to projects such as:
+                  <a className="text-blue-500 hover:text-blue-700" href="https://roziapp.com/" target="_blank" rel="noopener noreferrer">Rozi</a>,
+                  <a className="text-blue-500 hover:text-blue-700" href="https://www.hvrai.app/" target="_blank" rel="noopener noreferrer">Hvrai</a>,
+                  <a className="text-blue-500 hover:text-blue-700" href="https://admin.bcappa.com/dashboard/" target="_blank" rel="noopener noreferrer">B‑cappa admin</a>,
+                  and
+                  <a className="text-blue-500 hover:text-blue-700" href="https://corp.sehatkahani.com/auth/login" target="_blank" rel="noopener noreferrer">Sehat Kahani</a>.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section id="blog" className="py-24 px-4">
         <div className="container max-w-6xl mx-auto">
           <h2
@@ -1719,10 +1761,10 @@ export default function Portfolio() {
                   <span
                     className={themeStyles.muted}
                     onClick={() => {
-                      open("mailto:shaikhhashir034@email.com");
+                      open("mailto:contact@mhhashir.me");
                     }}
                   >
-                    shaikhhashir034@email.com
+                    contact@mhhashir.me
                     <p className="text-sm text-muted-foreground text-gray-400">
                       Send me your query anytime!
                     </p>
@@ -1733,7 +1775,7 @@ export default function Portfolio() {
                     <Phone className="w-6 h-6 text-primary hover:text-amber-700" />
                   </div>
                   <span className={themeStyles.muted}>
-                    +92-3304201181
+                    +92-314-2811181
                     <p className="text-sm text-muted-foreground text-gray-400">
                       24/7 Available for call and message
                     </p>
@@ -1744,9 +1786,9 @@ export default function Portfolio() {
                     <MapIcon className="w-6 h-6 text-primary hover:text-amber-700" />
                   </div>
                   <span className={themeStyles.muted}>
-                    Sindh, Pakistan
+                    Hyderabad, Sindh
                     <p className="text-sm text-muted-foreground text-gray-400">
-                      Hirabad City, Hyderabad
+                      Pakistan
                     </p>
                   </span>
                 </div>
@@ -1772,7 +1814,7 @@ export default function Portfolio() {
                       value={formData.name}
                       onChange={handleChange}
                       // Updated: Orange border default, Dark Orange border + ring on focus
-                      className="w-full px-4 py-3 border border-orange-500 rounded-lg bg-input focus:outline-none focus:ring-2 focus:ring-orange-700/50 focus:border-orange-700 transition-all duration-300"
+                      className="w-full px-4 py-3 border border-orange-500 rounded-lg bg-input focus:outline-none focus:ring-2 focus:ring-orange-700/50 focus:border-orange-700 transition-all duration-300 placeholder-gray-500 dark:placeholder-white"
                       placeholder="Your name"
                       required
                     />
@@ -1789,7 +1831,7 @@ export default function Portfolio() {
                       value={formData.email}
                       onChange={handleChange}
                       // Updated: Orange border default, Dark Orange border + ring on focus
-                      className="w-full px-4 py-3 border border-orange-500 rounded-lg bg-input focus:outline-none focus:ring-2 focus:ring-orange-700/50 focus:border-orange-700 transition-all duration-300"
+                      className="w-full px-4 py-3 border border-orange-500 rounded-lg bg-input focus:outline-none focus:ring-2 focus:ring-orange-700/50 focus:border-orange-700 transition-all duration-300 placeholder-gray-500 dark:placeholder-white"
                       placeholder="your.email@example.com"
                       required
                     />
@@ -1806,7 +1848,7 @@ export default function Portfolio() {
                       onChange={handleChange}
                       rows={4}
                       // Updated: Orange border default, Dark Orange border + ring on focus
-                      className="w-full px-4 py-3 border border-orange-500 rounded-lg bg-input focus:outline-none focus:ring-2 focus:ring-orange-700/50 focus:border-orange-700 transition-all duration-300"
+                      className="w-full px-4 py-3 border border-orange-500 rounded-lg bg-input focus:outline-none focus:ring-2 focus:ring-orange-700/50 focus:border-orange-700 transition-all duration-300 placeholder-gray-500 dark:placeholder-white"
                       placeholder="Tell me about your project..."
                       required
                     />
