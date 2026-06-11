@@ -335,7 +335,7 @@ export default function Portfolio() {
               asChild
               className={`hidden sm:flex items-center gap-2 border-amber-500/50 hover:bg-amber-100 transition-all duration-300 rounded-full px-4 ${themeStyles.text}`}
             >
-              <a href="/Muhammad Hashir's Resume.pdf" download="Muhammad Hashir's Resume.pdf">
+              <a href="/Muhammad-Hashir's Resume.pdf" download="Muhammad-Hashir's Resume.pdf">
                 <Download className="w-4 h-4" />
                 <span>Resume</span>
               </a>
