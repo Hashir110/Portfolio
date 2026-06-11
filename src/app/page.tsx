@@ -414,7 +414,7 @@ export default function Portfolio() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </a>
               <a
-                href="/Muhammad-Hashir's Resume.pdf" download="Muhammad Hashir's Resume.pdf"
+                href="/Muhammad-Hashir's Resume.pdf" download="Muhammad-Hashir's Resume.pdf"
                 className="mt-2 flex items-center gap-2 px-6 py-2 bg-amber-500 text-white rounded-full "
                 onClick={() => setIsOpen(false)}
               >
