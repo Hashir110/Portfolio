@@ -1,5 +1,6 @@
 "use client";
 
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -283,11 +284,11 @@ export default function Portfolio() {
       dir={currentLangObj.dir}
       className={`min-h-screen ${themeStyles.background} ${themeStyles.text} transition-colors duration-300 font-sans relative selection:bg-amber-500/20 selection:text-amber-400`}
     >
-      
+
       {/* Navigation Header */}
       <header className={`sticky top-0 z-50 w-full border-b ${themeStyles.header} backdrop-blur-md transition-all`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20 gap-4">
-          
+
           {/* Logo */}
           <a href="#about" className="font-semibold text-lg tracking-tight hover:opacity-80 transition-opacity flex items-center gap-2 flex-shrink-0">
             <span className="font-mono text-amber-500 font-bold text-xl">&lt;/&gt;</span>
@@ -317,7 +318,7 @@ export default function Portfolio() {
 
           {/* Right Action Controls */}
           <div className="flex items-center gap-2.5 flex-shrink-0">
-            
+
             {/* Language Switcher Dropdown */}
             <div className="relative">
               <button
@@ -336,9 +337,8 @@ export default function Portfolio() {
                     <button
                       key={l.code}
                       onClick={() => changeLanguage(l.code)}
-                      className={`w-full px-3.5 py-2 text-left rtl:text-right text-xs font-medium flex items-center justify-between hover:bg-neutral-800/80 transition-colors cursor-pointer ${
-                        lang === l.code ? "text-amber-400 font-bold bg-amber-500/10" : "text-neutral-300"
-                      }`}
+                      className={`w-full px-3.5 py-2 text-left rtl:text-right text-xs font-medium flex items-center justify-between hover:bg-neutral-800/80 transition-colors cursor-pointer ${lang === l.code ? "text-amber-400 font-bold bg-amber-500/10" : "text-neutral-300"
+                        }`}
                     >
                       <span className="flex items-center gap-2">
                         <span>{l.flag}</span>
@@ -353,8 +353,8 @@ export default function Portfolio() {
 
             {/* Resume Download */}
             <a
-              href="/Muhammad-Hashir's Resume.pdf"
-              download="Muhammad-Hashir's Resume.pdf"
+              href="/Muhammad Hashir'Resume.pdf"
+              download="Muhammad Hashir'Resume.pdf"
               className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-neutral-700/80 hover:border-amber-500/60 text-xs font-semibold whitespace-nowrap transition-all hover:bg-amber-500/10"
             >
               <Download className="w-3.5 h-3.5 text-amber-500" />
@@ -442,7 +442,7 @@ export default function Portfolio() {
       {/* Hero / About Section */}
       <section id="about" className="py-20 lg:py-28 px-6 border-b border-neutral-800/50">
         <div className="max-w-6xl mx-auto">
-          
+
           <div className="select-none mb-12 text-center overflow-hidden">
             <h1 className={`text-5xl sm:text-7xl md:text-8xl font-black uppercase tracking-tight ${isDarkMode ? "stroke-text-dark" : "stroke-text-light"}`}>
               Muhammad Hashir
@@ -450,7 +450,7 @@ export default function Portfolio() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
+
             <div className="lg:col-span-5 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -520,19 +520,19 @@ export default function Portfolio() {
 
             <div className="lg:col-span-3 space-y-6 lg:text-right rtl:lg:text-left border-t lg:border-t-0 lg:border-l rtl:lg:border-l-0 rtl:lg:border-r border-neutral-800/60 pt-6 lg:pt-0 lg:pl-8 rtl:lg:pl-0 rtl:lg:pr-8">
               <div>
-                <span className="text-4xl font-extrabold text-amber-500 font-mono">{t.hero.stats.projects}</span>
+                <AnimatedCounter className="text-4xl font-extrabold text-amber-500 font-mono" value={t.hero.stats.projects} />
                 <h4 className="text-sm font-semibold text-neutral-200 mt-1">{t.hero.stats.projectsLabel}</h4>
                 <p className={`${themeStyles.muted} text-xs mt-0.5`}>{t.hero.stats.projectsSub}</p>
               </div>
 
               <div>
-                <span className="text-4xl font-extrabold text-amber-500 font-mono">{t.hero.stats.experience}</span>
+                <AnimatedCounter className="text-4xl font-extrabold text-amber-500 font-mono" value={t.hero.stats.experience} />
                 <h4 className="text-sm font-semibold text-neutral-200 mt-1">{t.hero.stats.experienceLabel}</h4>
                 <p className={`${themeStyles.muted} text-xs mt-0.5`}>{t.hero.stats.experienceSub}</p>
               </div>
 
               <div>
-                <span className="text-4xl font-extrabold text-amber-500 font-mono">{t.hero.stats.quality}</span>
+                <AnimatedCounter className="text-4xl font-extrabold text-amber-500 font-mono" value={t.hero.stats.quality} />
                 <h4 className="text-sm font-semibold text-neutral-200 mt-1">{t.hero.stats.qualityLabel}</h4>
                 <p className={`${themeStyles.muted} text-xs mt-0.5`}>{t.hero.stats.qualitySub}</p>
               </div>
@@ -659,11 +659,10 @@ export default function Portfolio() {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all ${
-                    activeCategory === cat
-                      ? "bg-amber-500 text-black font-bold shadow-sm"
-                      : "text-neutral-400 hover:text-white"
-                  }`}
+                  className={`px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all ${activeCategory === cat
+                    ? "bg-amber-500 text-black font-bold shadow-sm"
+                    : "text-neutral-400 hover:text-white"
+                    }`}
                 >
                   {t.portfolio.categories[idx] || cat}
                 </button>
@@ -803,7 +802,7 @@ export default function Portfolio() {
       {/* Professional Testimonials Section */}
       <section id="testimonials" className="py-24 px-6 border-b border-neutral-800/50">
         <div className="max-w-6xl mx-auto">
-          
+
           <div className="text-center mb-16">
             <span className="text-xs font-mono text-emerald-400 font-semibold tracking-wider uppercase block mb-2">
               {t.testimonials.tag}
@@ -817,15 +816,15 @@ export default function Portfolio() {
           </div>
 
           <div className="space-y-6">
-            
+
             {/* Top Featured Recommendation */}
             <div className={`p-8 lg:p-10 rounded-3xl ${themeStyles.testimonialBg} relative`}>
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                
+
                 <div className="lg:col-span-4 flex flex-col items-start space-y-4 border-b lg:border-b-0 lg:border-r rtl:lg:border-r-0 rtl:lg:border-l border-neutral-800/80 pb-6 lg:pb-0 lg:pr-8 rtl:lg:pr-0 rtl:lg:pl-8">
                   <div className="flex items-center gap-4">
                     <img
-                      src="/ethisham.png"
+                      src="/bhai.jpg"
                       alt={t.testimonials.items[0].name}
                       className="w-14 h-14 rounded-full object-cover border border-emerald-500/30"
                     />
@@ -858,7 +857,7 @@ export default function Portfolio() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              
+
               {/* Recommendation 2 */}
               <div className={`p-8 rounded-3xl ${themeStyles.testimonialBg} flex flex-col justify-between space-y-6`}>
                 <p className="text-sm sm:text-base font-serif italic text-neutral-200 leading-relaxed">
@@ -931,7 +930,7 @@ export default function Portfolio() {
       {/* Technical Command Center / Skills Section (Team Lead Layout) */}
       <section id="skills" className="py-24 px-6 border-b border-neutral-800/50">
         <div className="max-w-6xl mx-auto">
-          
+
           {/* Section Header */}
           <div className="text-center mb-16 space-y-3">
             <span className="text-xs font-mono text-emerald-400 font-semibold tracking-widest uppercase block">
@@ -943,7 +942,7 @@ export default function Portfolio() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            
+
             {/* Left Card: Engineering Approach */}
             <div className={`lg:col-span-4 p-8 sm:p-9 rounded-[2rem] ${themeStyles.techCardBg} flex flex-col justify-between space-y-8 shadow-xl relative overflow-hidden`}>
               <div className="space-y-6 relative z-10">
@@ -968,7 +967,7 @@ export default function Portfolio() {
                     <Rocket className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold text-white tracking-wide">{t.techCenter.approach.stat1Count}</h4>
+                    <h4 className="text-xs font-bold text-white tracking-wide"><AnimatedCounter value={t.techCenter.approach.stat1Count} /></h4>
                     <span className="text-[10px] text-neutral-400 block uppercase font-mono tracking-wider">{t.techCenter.approach.stat1Label}</span>
                   </div>
                 </div>
@@ -978,7 +977,7 @@ export default function Portfolio() {
                     <Clock className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold text-white tracking-wide">{t.techCenter.approach.stat2Count}</h4>
+                    <h4 className="text-xs font-bold text-white tracking-wide"><AnimatedCounter value={t.techCenter.approach.stat2Count} /></h4>
                     <span className="text-[10px] text-neutral-400 block uppercase font-mono tracking-wider">{t.techCenter.approach.stat2Label}</span>
                   </div>
                 </div>
@@ -988,7 +987,7 @@ export default function Portfolio() {
                     <ShieldCheck className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold text-white tracking-wide">{t.techCenter.approach.stat3Count}</h4>
+                    <h4 className="text-xs font-bold text-white tracking-wide"><AnimatedCounter value={t.techCenter.approach.stat3Count} /></h4>
                     <span className="text-[10px] text-neutral-400 block uppercase font-mono tracking-wider">{t.techCenter.approach.stat3Label}</span>
                   </div>
                 </div>
@@ -998,7 +997,7 @@ export default function Portfolio() {
 
             {/* Right Panel: Core Technology Stack & Strategic Capabilities */}
             <div className={`lg:col-span-8 p-8 lg:p-10 rounded-[2rem] ${themeStyles.techCardBg} flex flex-col justify-between space-y-10 shadow-xl`}>
-              
+
               <div>
                 {/* Panel Header */}
                 <div className="flex items-center gap-3 pb-6 border-b border-neutral-800/80 mb-8">
@@ -1013,7 +1012,7 @@ export default function Portfolio() {
 
                 {/* 3 Tech Stack Columns */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  
+
                   {/* Column 1: FRONTEND DEVELOPMENT */}
                   <div className="space-y-5">
                     <div className="flex items-center gap-2 pb-2.5 border-b border-neutral-800/80">
@@ -1028,9 +1027,9 @@ export default function Portfolio() {
                       <div className="flex items-center gap-3">
                         <div className="p-2 rounded-xl bg-neutral-900/90 border border-neutral-800 flex items-center justify-center flex-shrink-0">
                           <svg className="w-4 h-4 text-white" viewBox="0 0 180 180" fill="currentColor">
-                            <circle cx="90" cy="90" r="90" fill="currentColor"/>
-                            <path d="M149.508 157.52L69.141 54H54V125.97H66.8141V69.948L139.73 163.504C143.149 161.737 146.417 159.733 149.508 157.52Z" fill="#000"/>
-                            <rect x="115" y="54" width="12.5" height="72" fill="#000"/>
+                            <circle cx="90" cy="90" r="90" fill="currentColor" />
+                            <path d="M149.508 157.52L69.141 54H54V125.97H66.8141V69.948L139.73 163.504C143.149 161.737 146.417 159.733 149.508 157.52Z" fill="#000" />
+                            <rect x="115" y="54" width="12.5" height="72" fill="#000" />
                           </svg>
                         </div>
                         <div>
@@ -1090,7 +1089,7 @@ export default function Portfolio() {
                       <div className="flex items-center gap-3">
                         <div className="p-2 rounded-xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center flex-shrink-0">
                           <svg className="w-4 h-4 text-rose-500" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19.5 3c-1.5 0-3 1.5-3 3 0 1.2.8 2.3 2 2.7V12c0 2.2-1.8 4-4 4s-4-1.8-4-4V8.7c1.2-.4 2-1.5 2-2.7 0-1.5-1.5-3-3-3S6.5 4.5 6.5 6c0 1.2.8 2.3 2 2.7V12c0 3.3 2.7 6 6 6s6-2.7 6-6V8.7c1.2-.4 2-1.5 2-2.7 0-1.5-1.5-3-3-3z"/>
+                            <path d="M19.5 3c-1.5 0-3 1.5-3 3 0 1.2.8 2.3 2 2.7V12c0 2.2-1.8 4-4 4s-4-1.8-4-4V8.7c1.2-.4 2-1.5 2-2.7 0-1.5-1.5-3-3-3S6.5 4.5 6.5 6c0 1.2.8 2.3 2 2.7V12c0 3.3 2.7 6 6 6s6-2.7 6-6V8.7c1.2-.4 2-1.5 2-2.7 0-1.5-1.5-3-3-3z" />
                           </svg>
                         </div>
                         <div>
@@ -1328,7 +1327,7 @@ export default function Portfolio() {
       <section id="contact" className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            
+
             <div className="lg:col-span-5 space-y-6">
               <div>
                 <span className="text-xs font-mono text-amber-500 font-semibold tracking-wider uppercase block mb-2">{t.contact.tag}</span>
@@ -1383,7 +1382,7 @@ export default function Portfolio() {
               <div className={`p-8 rounded-2xl ${themeStyles.card} border`}>
                 <form ref={formRef} onSubmit={sendEmail} className="space-y-5">
                   <input type="hidden" name="project_name" value="Portfolio Website Inquiry" />
-                  
+
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
                       <label htmlFor="name" className="block text-xs font-mono text-neutral-400 uppercase mb-2">
