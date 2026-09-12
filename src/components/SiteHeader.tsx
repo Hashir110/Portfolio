@@ -22,7 +22,7 @@ export function SiteHeader() {
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
 
   const navItems = [
-    { name: t.nav.about, href: "/" },
+    { name: t.nav.about, href: "/about" },
     { name: t.nav.services, href: "/services" },
     { name: t.nav.work, href: "/projects" },
     { name: t.nav.experience, href: "/experience" },
