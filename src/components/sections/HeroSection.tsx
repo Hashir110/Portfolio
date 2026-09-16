@@ -52,24 +52,22 @@ export function HeroSection({ showVideoIntro = false }: HeroSectionProps) {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
               </span>
-              <span>Open to new ventures & full-time roles</span>
+              <span>{t.hero.badge}</span>
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
-              Engineer Who{" "}
+              {t.hero.titlePrefix || "Engineer Who "}{" "}
               <span className="text-amber-500 underline decoration-amber-500/30 decoration-wavy decoration-2">
-                Speaks Business
+                {t.hero.titleHighlight || "Speaks Business"}
               </span>
             </h2>
 
             {/* Left Accent Quote Box (Inspired by mhsaeed.com/about) */}
             <div className={`border-l-4 border-amber-500/80 pl-5 py-2 space-y-2 text-base leading-relaxed italic ${themeStyles.muted}`}>
-              <p>“Clean code only matters when it solves the right problem.”</p>
-              <p>
-                I help founders turn ideas into scalable products, businesses optimize daily operations, and engineering teams ship dependable software.
-              </p>
+              <p>{t.hero.quote1}</p>
+              <p>{t.hero.quote2}</p>
               <p className={`font-bold not-italic ${isDarkMode ? "text-neutral-100" : "text-neutral-900"}`}>
-                I bring direct communication, thoughtful technical challenge, and engineering shaped around your commercial goals.
+                {t.hero.quote3}
               </p>
             </div>
 
@@ -89,7 +87,7 @@ export function HeroSection({ showVideoIntro = false }: HeroSectionProps) {
                 className="px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-black font-bold text-sm transition-all shadow-lg hover:-translate-y-0.5 flex items-center gap-2"
               >
                 <Rocket className="w-4 h-4" />
-                <span>Start a Conversation</span>
+                <span>{t.hero.startConversation}</span>
               </Link>
 
               <Link
@@ -101,7 +99,7 @@ export function HeroSection({ showVideoIntro = false }: HeroSectionProps) {
                 }`}
               >
                 <Briefcase className="w-4 h-4 text-amber-500" />
-                <span>View My Work</span>
+                <span>{t.hero.viewWork}</span>
               </Link>
 
               {/* Social Links */}
@@ -175,8 +173,8 @@ export function HeroSection({ showVideoIntro = false }: HeroSectionProps) {
                       <BadgeCheck className="w-5 h-5" />
                     </div>
                     <div className="flex flex-col text-xs">
-                      <span className="font-bold text-white text-sm">2+ Years Exp.</span>
-                      <span className="text-neutral-300 text-[11px]">Building software since 2023</span>
+                      <span className="font-bold text-white text-sm">{t.hero.expTitle}</span>
+                      <span className="text-neutral-300 text-[11px]">{t.hero.expSub}</span>
                     </div>
                   </div>
                 </div>
@@ -189,13 +187,13 @@ export function HeroSection({ showVideoIntro = false }: HeroSectionProps) {
         {showVideoIntro && (
           <div className="pt-8 border-t border-neutral-800/40 max-w-4xl mx-auto text-center space-y-6">
             <div className="inline-flex items-center gap-2 font-mono text-xs font-semibold tracking-widest text-amber-500 uppercase">
-              <span>// MEET MUHAMMAD HASHIR</span>
+              <span>{t.hero.meetTag}</span>
             </div>
             <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
-              A <span className="text-amber-500">Quick Introduction</span>
+              {t.hero.quickIntroTitle}
             </h3>
             <p className={`${themeStyles.muted} max-w-xl mx-auto text-sm sm:text-base`}>
-              A brief introduction to who I am, my software engineering background, and how I work with client teams.
+              {t.hero.quickIntroDesc}
             </p>
 
             <div className={`relative aspect-video max-w-3xl mx-auto overflow-hidden rounded-2xl border shadow-2xl group ${
@@ -213,7 +211,7 @@ export function HeroSection({ showVideoIntro = false }: HeroSectionProps) {
                   <Video className="w-7 h-7 text-amber-400" />
                 </div>
                 <span className="font-mono text-xs uppercase tracking-widest bg-amber-500/20 text-amber-300 px-3 py-1 rounded-full border border-amber-500/30">
-                  Video Intro Coming Soon
+                  {t.hero.videoComingSoon}
                 </span>
               </div>
             </div>
