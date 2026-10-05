@@ -23,13 +23,14 @@ export function TestimonialsSection() {
         </div>
 
         <div className="space-y-6">
+          {/* Card 1: Muhammad Saeed (Top Featured Banner) */}
           <div className={`p-8 lg:p-10 rounded-3xl ${themeStyles.testimonialBg} relative overflow-hidden transition-all duration-300`}>
             <Quote className="absolute -top-4 -right-4 w-32 h-32 text-amber-500/5 pointer-events-none rtl:right-auto rtl:-left-4" />
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
               <div className="lg:col-span-4 flex flex-col items-start space-y-4 border-b lg:border-b-0 lg:border-r rtl:lg:border-r-0 rtl:lg:border-l border-neutral-800/80 pb-6 lg:pb-0 lg:pr-8 rtl:lg:pr-0 rtl:lg:pl-8">
                 <div className="flex items-center gap-4">
                   <img
-                    src="/bhai.jpg"
+                    src="/saeed.png"
                     alt={t.testimonials.items[0].name}
                     className="w-14 h-14 rounded-full object-cover border-2 border-amber-500/40 ring-2 ring-amber-500/20 shadow-md"
                   />
@@ -53,24 +54,31 @@ export function TestimonialsSection() {
               </div>
 
               <div className="lg:col-span-8">
-                <p className="text-base sm:text-lg font-serif italic text-neutral-200 leading-relaxed">
-                  {t.testimonials.items[0].quote}
-                </p>
+                <div className="max-h-48 sm:max-h-56 overflow-y-auto pr-3 custom-scrollbar">
+                  <p className="text-base sm:text-lg font-serif italic text-neutral-200 leading-relaxed whitespace-pre-line">
+                    {t.testimonials.items[0].quote}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
+          {/* Cards 2 & 3: Bottom Grid (2: Salman Shaikh, 3: Aeiyan Khan) */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className={`p-8 rounded-3xl ${themeStyles.testimonialBg} relative overflow-hidden flex flex-col justify-between space-y-6 transition-all duration-300`}>
+            {/* Card 2: Muhammad Salman Shaikh */}
+            <div className={`p-8 rounded-3xl ${themeStyles.testimonialBg} relative overflow-hidden flex flex-col justify-between min-h-[280px] sm:min-h-[300px] space-y-6 transition-all duration-300`}>
               <Quote className="absolute -top-3 -right-3 w-24 h-24 text-amber-500/5 pointer-events-none rtl:right-auto rtl:-left-3" />
-              <p className="text-sm sm:text-base font-serif italic text-neutral-200 leading-relaxed relative z-10">
-                {t.testimonials.items[1].quote}
-              </p>
+              
+              <div className="max-h-44 overflow-y-auto pr-2 custom-scrollbar relative z-10">
+                <p className="text-sm sm:text-base font-serif italic text-neutral-200 leading-relaxed whitespace-pre-line">
+                  {t.testimonials.items[1].quote}
+                </p>
+              </div>
 
               <div className="flex items-center justify-between pt-4 border-t border-neutral-800/80 relative z-10">
                 <div className="flex items-center gap-3">
                   <img
-                    src="/saeed.png"
+                    src="/bhai.jpg"
                     alt={t.testimonials.items[1].name}
                     className="w-11 h-11 rounded-full object-cover border border-amber-500/40 ring-1 ring-amber-500/20 shadow-sm"
                   />
@@ -92,11 +100,15 @@ export function TestimonialsSection() {
               </div>
             </div>
 
-            <div className={`p-8 rounded-3xl ${themeStyles.testimonialBg} relative overflow-hidden flex flex-col justify-between space-y-6 transition-all duration-300`}>
+            {/* Card 3: Aeiyan Khan */}
+            <div className={`p-8 rounded-3xl ${themeStyles.testimonialBg} relative overflow-hidden flex flex-col justify-between min-h-[280px] sm:min-h-[300px] space-y-6 transition-all duration-300`}>
               <Quote className="absolute -top-3 -right-3 w-24 h-24 text-amber-500/5 pointer-events-none rtl:right-auto rtl:-left-3" />
-              <p className="text-sm sm:text-base font-serif italic text-neutral-200 leading-relaxed relative z-10">
-                {t.testimonials.items[2].quote}
-              </p>
+              
+              <div className="max-h-44 overflow-y-auto pr-2 custom-scrollbar relative z-10">
+                <p className="text-sm sm:text-base font-serif italic text-neutral-200 leading-relaxed whitespace-pre-line">
+                  {t.testimonials.items[2].quote}
+                </p>
+              </div>
 
               <div className="flex items-center justify-between pt-4 border-t border-neutral-800/80 relative z-10">
                 <div className="flex items-center gap-3">

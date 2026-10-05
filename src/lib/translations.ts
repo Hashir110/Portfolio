@@ -203,16 +203,16 @@ export const translations = {
       verified: "Verified on LinkedIn",
       items: [
         {
+          name: "Muhammad Saeed",
+          role: "Former Team Lead",
+          company: "Zetsol Technologies",
+          quote: "“I had the opportunity to work with Hashir as his Team Lead, starting from the early stage of his career when he joined us as an intern and later grew into a Full Stack Developer.\n\nWhat stood out most about Hashir was his dedication and willingness to improve. He consistently put in the effort required to meet expectations, learn from challenges, and take responsibility for his work. Even when tasks were demanding or required additional time, he remained committed and often went the extra mile to meet deadlines and complete his responsibilities.\n\nOver time, I saw clear growth in both his technical abilities and overall approach to software development. Hashir is hardworking, sincere, and persistent, and I believe these qualities will continue to help him grow further in his career.”",
+        },
+        {
           name: "Muhammad Salman Shaikh",
           role: "Big Brother",
           company: "Family",
           quote: "“Having worked closely with Hashir on mobile application projects utilizing React Native and Expo, I have seen his rapid growth and solid problem-solving abilities firsthand. As a senior mobile developer, what stands out to me is his clean architectural mindset, quick adaptation to cross-platform challenges, and eagerness to write maintainable code. Hashir consistently delivers on frontend flows, API integrations, and mobile performance optimization with genuine dedication. He is an outstanding engineer to collaborate with, and I have full confidence in his ability to excel in any engineering team he joins. Highly recommended!”",
-        },
-        {
-          name: "Muhammad Saeed",
-          role: "Former Team Lead",
-          company: "Zetsol Technologies",
-          quote: "“Hashir stood out for his exceptional attention to detail and commitment to quality, he consistently advocated for proper structure and best practices, even when facing pressure to cut corners, ensuring robust and scalable solutions. Muhammad is a reliable, innovative, and highly professional engineer I would highly recommend.”",
         },
         {
           name: "Aeiyan Khan",
@@ -581,16 +581,16 @@ export const translations = {
       verified: "Verificado en LinkedIn",
       items: [
         {
-          name: "Muhammad Salman Shaikh",
-          role: "Hermano Mayor",
-          company: "Familia",
-          quote: "“Habiendo trabajado estrechamente con Hashir en proyectos de aplicaciones móviles utilizando React Native y Expo, he presenciado de primera mano su rápido crecimiento y sus sólidas habilidades para resolver problemas. Como desarrollador móvil senior, lo que más destaca de él es su mentalidad de arquitectura limpia, su rápida adaptación a los desafíos multiplataforma y su entusiasmo por escribir código mantenible. Hashir cumple de manera constante con los flujos de frontend, integraciones de API y optimización del rendimiento móvil con verdadera dedicación. Es un ingeniero excepcional con quien colaborar y tengo plena confianza en su capacidad para destacar en cualquier equipo de ingeniería al que se una. ¡Muy recomendado!”",
-        },
-        {
           name: "Muhammad Saeed",
           role: "Ex Líder de Equipo",
           company: "ex-Zetsol Technologies",
           quote: "“Hashir destacó por su atención al detalle y compromiso con la calidad. Siempre defendió las mejores prácticas asegurando soluciones robustas y escalables.”",
+        },
+        {
+          name: "Muhammad Salman Shaikh",
+          role: "Hermano Mayor",
+          company: "Familia",
+          quote: "“Habiendo trabajado estrechamente con Hashir en proyectos de aplicaciones móviles utilizando React Native y Expo, he presenciado de primera mano su rápido crecimiento y sus sólidas habilidades para resolver problemas. Como desarrollador móvil senior, lo que más destaca de él es su mentalidad de arquitectura limpia, su rápida adaptación a los desafíos multiplataforma y su entusiasmo por escribir código mantenible. Hashir cumple de manera constante con los flujos de frontend, integraciones de API y optimización del rendimiento móvil con verdadera dedicación. Es un ingeniero excepcional con quien colaborar y tengo plena confianza en su capacidad para destacar en cualquier equipo de ingeniería al que se una. ¡Muy recomendado!”",
         },
         {
           name: "Aeiyan Khan",
@@ -959,16 +959,16 @@ export const translations = {
       verified: "Auf LinkedIn verifiziert",
       items: [
         {
-          name: "Muhammad Salman Shaikh",
-          role: "Großer Bruder",
-          company: "Familie",
-          quote: "“Durch die enge Zusammenarbeit mit Hashir bei mobilen Anwendungsprojekten mit React Native und Expo habe ich sein schnelles Wachstum und seine hervorragenden Problemlösungsfähigkeiten aus erster Hand miterlebt. Als Senior Mobile Developer sticht für mich seine saubere Architekturdenkweise, die schnelle Anpassung an plattformübergreifende Herausforderungen und sein Eifer, wartbaren Code zu schreiben, hervor. Hashir liefert durchgehend Frontend-Flows, API-Integrationen und mobile Leistungsoptimierung mit echter Hingabe. Er ist ein fantastischer Ingenieur für die Zusammenarbeit, und ich habe volles Vertrauen in seine Fähigkeit, in jedem Entwicklungsteam hervorragende Leistungen zu erbringen. Sehr zu empfehlen!”",
-        },
-        {
           name: "Muhammad Saeed",
           role: "Ehemaliger Teamleiter",
           company: "ex-Zetsol Technologies",
           quote: "“Hashir zeichnet sich durch Liebe zum Detail und Qualitätsbewusstsein aus. Er setzt stets auf saubere Strukturen und skalierbare Lösungen.”",
+        },
+        {
+          name: "Muhammad Salman Shaikh",
+          role: "Großer Bruder",
+          company: "Familie",
+          quote: "“Durch die enge Zusammenarbeit mit Hashir bei mobilen Anwendungsprojekten mit React Native und Expo habe ich sein schnelles Wachstum und seine hervorragenden Problemlösungsfähigkeiten aus erster Hand miterlebt. Als Senior Mobile Developer sticht für mich seine saubere Architekturdenkweise, die schnelle Anpassung an plattformübergreifende Herausforderungen und sein Eifer, wartbaren Code zu schreiben, hervor. Hashir liefert durchgehend Frontend-Flows, API-Integrationen und mobile Leistungsoptimierung mit echter Hingabe. Er ist ein fantastischer Ingenieur für die Zusammenarbeit, und ich habe volles Vertrauen in seine Fähigkeit, in jedem Entwicklungsteam hervorragende Leistungen zu erbringen. Sehr zu empfehlen!”",
         },
         {
           name: "Aeiyan Khan",
@@ -1337,16 +1337,16 @@ export const translations = {
       verified: "موثق على LinkedIn",
       items: [
         {
-          name: "محمد الشيخ",
-          role: "الأخ الأكبر",
-          company: "العائلة",
-          quote: "“من خلال العمل عن كثب مع حاشر في مشاريع تطبيقات الجوال باستخدام React Native و Expo، شهدت نموه السريع وقدراته القوية في حل المشكلات بشكل مباشر. كمهندس تطبيقات جوال أول، ما يلفت انتباهي هو عقليته المعمارية النظيفة، وتكيفه السريع مع تحديات المنصات المتعددة، وحرصه على كتابة كود قابل للصيانة. يقدم حاشر باستمرار واجهات ممتازة، وتكاملات API، وتطوير أداء الجوال بتفانٍ حقيقي. إنه مهندس رائع للتعاون معه، ولدي ثقة كاملة في قدرته على التفوق في أي فريق هندسي ينضم إليه. أوصي به بشدة!”",
-        },
-        {
           name: "Muhammad Saeed",
           role: "قائد الفريق السابق",
           company: "ex-Zetsol Technologies",
           quote: "“تميز حاشر باهتمامه الشديد بالتفاصيل والجودة، وحرص دائماً على تطبيق أفضل الممارسات لبناء حلول قوية ومستقرة.”",
+        },
+        {
+          name: "محمد الشيخ",
+          role: "الأخ الأكبر",
+          company: "العائلة",
+          quote: "“من خلال العمل عن كثب مع حاشر في مشاريع تطبيقات الجوال باستخدام React Native و Expo، شهدت نموه السريع وقدراته القوية في حل المشكلات بشكل مباشر. كمهندس تطبيقات جوال أول، ما يلفت انتباهي هو عقليته المعمارية النظيفة، وتكيفه السريع مع تحديات المنصات المتعددة، وحرصه على كتابة كود قابل للصيانة. يقدم حاشر باستمرار واجهات ممتازة، وتكاملات API، وتطوير أداء الجوال بتفانٍ حقيقي. إنه مهندس رائع للتعاون معه، ولدي ثقة كاملة في قدرته على التفوق في أي فريق هندسي ينضم إليه. أوصي به بشدة!”",
         },
         {
           name: "Aeiyan Khan",
@@ -1715,16 +1715,16 @@ export const translations = {
       verified: "LinkedIn پر تصدیق شدہ",
       items: [
         {
-          name: "محمد شیخ",
-          role: "بڑا بھائی",
-          company: "فیملی",
-          quote: "“حاشر کے ساتھ React Native اور Expo کا استعمال کرتے ہوئے موبائل ایپلیکیشن پراجیکٹس پر قریب سے کام کرتے ہوئے، میں نے اس کی تیز رفتاری سے ترقی اور مسائل حل کرنے کی صلاحیتوں کا خود مشاہدہ کیا ہے۔ ایک سینئر موبائل ڈیولپر کے طور پر، میرے لیے جو بات نمایاں ہے وہ اس کا کلین آرکیٹیکچرل ذہن، کراس پلیٹ فارم چیلنجز سے تیزی سے ہم آہنگ ہونا اور قابلِ دیکھ بھال (maintainable) کوڈ لکھنے کا شوق ہے۔ حاشر فرنٹ اینڈ فلو، API انٹیگریشنز اور موبائل پرفارمنس کی بہتری پر سچی لگن کے ساتھ کام کرتا ہے۔ وہ تعاون کے لیے ایک بہترین انجینئر ہے، اور مجھے اس کی صلاحیت پر پورا اعتماد ہے کہ وہ جس بھی انجینئرنگ ٹیم میں شامل ہوگا بہترین کارکردگی دکھائے گا۔ انتہائی سفارش کردہ!”",
-        },
-        {
           name: "محمد سعید",
           role: "سابق ٹیم لیڈ",
           company: "ex-Zetsol Technologies",
           quote: "“حاشر نے معیار اور باریک بینی پر ہمیشہ توجہ دی۔ بہترین کوڈنگ اور بہترین پریکٹسز کے ساتھ مضبوط اور معیاری حل تیار کیے۔”",
+        },
+        {
+          name: "محمد شیخ",
+          role: "بڑا بھائی",
+          company: "فیملی",
+          quote: "“حاشر کے ساتھ React Native اور Expo کا استعمال کرتے ہوئے موبائل ایپلیکیشن پراجیکٹس پر قریب سے کام کرتے ہوئے، میں نے اس کی تیز رفتاری سے ترقی اور مسائل حل کرنے کی صلاحیتوں کا خود مشاہدہ کیا ہے۔ ایک سینئر موبائل ڈیولپر کے طور پر، میرے لیے جو بات نمایاں ہے وہ اس کا کلین آرکیٹیکچرل ذہن، کراس پلیٹ فارم چیلنجز سے تیزی سے ہم آہنگ ہونا اور قابلِ دیکھ بھال (maintainable) کوڈ لکھنے کا شوق ہے۔ حاشر فرنٹ اینڈ فلو، API انٹیگریشنز اور موبائل پرفارمنس کی بہتری پر سچی لگن کے ساتھ کام کرتا ہے۔ وہ تعاون کے لیے ایک بہترین انجینئر ہے، اور مجھے اس کی صلاحیت پر پورا اعتماد ہے کہ وہ جس بھی انجینئرنگ ٹیم میں شامل ہوگا بہترین کارکردگی دکھائے گا۔ انتہائی سفارش کردہ!”",
         },
         {
           name: "عیان خان",
