@@ -1,0 +1,10 @@
+# Allow all web crawlers and AI agents
+User-agent: *
+Allow: /
+
+# LLM Context File (llms.txt standard)
+# https://llmstxt.org/
+# Provides AI models (ChatGPT, Claude, Gemini) with a clean markdown summary of the site
+# llms-txt: https://mhhashir.me/llms.txt
+
+Sitemap: https://mhhashir.me/sitemap.xml
