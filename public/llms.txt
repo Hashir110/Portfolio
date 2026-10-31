@@ -1,0 +1,50 @@
+# Muhammad Hashir - Software Engineer & Full Stack Developer
+
+> Full Stack Software Engineer specializing in React 19, Next.js 15, TypeScript, NestJS, React Native, and PostgreSQL. Experienced in engineering production web applications, AI-driven integrations, and cross-platform mobile apps.
+
+## Overview
+Muhammad Hashir is a Full Stack Software Engineer based in Hyderabad, Sindh, Pakistan with 2+ years of production experience building modern web and mobile applications. He partners with founders, businesses, and engineering teams to turn ideas into scalable, dependable software products.
+
+- Website: https://mhhashir.me
+- Email: contact@mhhashir.me
+- GitHub: https://github.com/Hashir110
+- LinkedIn: https://www.linkedin.com/in/muhammad-hashir-shaikh-b94854340/
+- Resume: https://mhhashir.me/Muhammad%20Hashir'Resume.pdf
+
+## Core Technical Skills
+- Frontend Development: React 19, Next.js 15 (App Router, Server Actions), TypeScript, JavaScript (ES6+), Tailwind CSS, HTML5, CSS3, Responsive UI/UX
+- Backend & Systems: NestJS, Node.js, Express.js, RESTful APIs, Microservices, Role-Based Access Control (RBAC), JWT Authentication
+- Databases & ORM: PostgreSQL, Prisma, TypeORM, SQL query optimization, database modeling
+- Mobile Development: React Native, Expo, Cross-Platform iOS & Android development, Native Device APIs
+- AI & Automation: Large Language Model (LLM) integrations, agentic workflows, custom AI chatbots, automated data processing pipelines
+- Integrations & Tooling: Stripe & multi-gateway payment processing, Git, GitHub, Vercel, Docker basics, Linux, Postman
+
+## Professional Experience
+- Full Stack Developer at Samarix (Present): Building scalable full-stack features for AI-driven platforms, optimizing database queries, and delivering responsive modern UI components.
+- Full Stack Developer at Zetsol Technologies (1 Year): Developed production web and cross-platform mobile products using NestJS, React, Next.js, and React Native.
+- Frontend Developer Intern at Zetsol Technologies (3 Months): Developed Zetsol's official corporate web application, promotional landing pages, and administrative portal components.
+
+## Featured Projects
+- [Rozi Web Application](https://mhhashir.me/projects#rozi): Comprehensive service provider marketplace featuring real-time appointment booking, provider management, and multi-gateway payment integration.
+- [Whiterock Companion App](https://mhhashir.me/projects#whiterock): Cross-platform mobile app engineered for the Whiterock Community, featuring directory lookup, push alerts, and event management.
+- [Listr — Task & Productivity Platform](https://mhhashir.me/projects#listr): Interactive task and list management web application with real-time organization, intuitive workflows, and team productivity tooling.
+- [JayaKHub — Corporate Management Portal](https://mhhashir.me/projects#jayakhub): Enterprise-grade corporate management platform featuring role-based secure authentication, multi-tenant portal controls, and interactive management dashboards.
+- [HERO VILLAIN REPUBLIC](https://mhhashir.me/projects#hvrai): Dynamic pop-culture digital media platform showcasing interactive stories, blogs, and multimedia galleries.
+- [BC APPA ADMIN PORTAL](https://mhhashir.me/projects#bcappa): Enterprise administrative control center managing user metrics, job listings, and backend services.
+
+## Engineering Services
+- [Web Applications](https://mhhashir.me/services#web): Full-stack SaaS platforms, custom dashboards, RESTful API architecture, SEO optimization, and high-performance web systems.
+- [Mobile Development](https://mhhashir.me/services#mobile): Cross-platform iOS and Android applications with offline storage, camera/GPS device features, push notifications, and store deployment.
+- [Backend Systems](https://mhhashir.me/services#backend): Scalable NestJS/Node.js backend architectures, PostgreSQL schemas, payment gateway integrations, and robust security.
+- [AI & Automation](https://mhhashir.me/services#ai): Agentic workflow integration, LLM-powered custom chatbots, and automated business processing pipelines.
+
+## Site Sitemap & Key Links
+- [Home](https://mhhashir.me/): Portfolio landing page with quick intro, stats, and highlights.
+- [About](https://mhhashir.me/about): Engineering approach, background, and philosophy.
+- [Projects](https://mhhashir.me/projects): Full showcase of client and production work.
+- [Services](https://mhhashir.me/services): Service breakdown and scope estimates.
+- [Experience](https://mhhashir.me/experience): Work history, roles, and achievements.
+- [Skills](https://mhhashir.me/skills): Technical skills matrix, capabilities, and technology stack.
+- [Testimonials](https://mhhashir.me/testimonials): Verified endorsements from team leads, project managers, and senior peers on LinkedIn.
+- [Contact](https://mhhashir.me/contact): Inquiries, collaboration requests, and contact details.
+- [Journal / Writing](https://mhhashir.me/blog): Technical articles and engineering notes on modern web and mobile development.
