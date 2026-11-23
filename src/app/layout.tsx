@@ -2,7 +2,7 @@ import type React from "react";
 import type { Metadata } from "next";
 import { Work_Sans, Open_Sans } from "next/font/google";
 import "./globals.css";
-import { SiteProvider } from "@/context/site-context";
+import { SiteProvider, SiteContainer } from "@/context/site-context";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
@@ -141,7 +141,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${workSans.variable} ${openSans.variable} antialiased`}
+      className={`dark ${workSans.variable} ${openSans.variable} antialiased`}
     >
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -152,11 +152,11 @@ export default function RootLayout({
       </head>
       <body className="font-sans">
         <SiteProvider>
-          <div className="min-h-screen bg-[#0b0f12] text-[#f3f4f6] transition-colors duration-300 relative selection:bg-amber-500/20 selection:text-amber-400">
+          <SiteContainer>
             <SiteHeader />
             {children}
             <SiteFooter />
-          </div>
+          </SiteContainer>
         </SiteProvider>
       </body>
 

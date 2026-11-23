@@ -29,15 +29,29 @@ export function ExperienceSection() {
               <p className={`${themeStyles.muted} text-xs leading-relaxed mb-3`}>
                 {exp.desc}
               </p>
+              {idx === 0 && (
+                <div className="flex flex-wrap gap-2 text-xs pt-1">
+                  <a href="https://listr.live" target="_blank" rel="noreferrer" className="text-amber-400 hover:underline">Listr</a>
+                  <span className="text-neutral-600">•</span>
+                  <a href="https://corporate.jayakhub.com/login" target="_blank" rel="noreferrer" className="text-amber-400 hover:underline">jayakHub</a>
+                  <span className="text-neutral-600">•</span>
+                  <a href="https://nortra.ai" target="_blank" rel="noreferrer" className="text-amber-400 hover:underline">nortra</a>
+                </div>
+              )}
               {idx === 1 && (
                 <div className="flex flex-wrap gap-2 text-xs pt-1">
-                  <a href="https://roziapp.com/" target="_blank" className="text-amber-400 hover:underline">Rozi</a>
+                  <a href="https://roziapp.com/" target="_blank" rel="noreferrer" className="text-amber-400 hover:underline">Rozi</a>
                   <span className="text-neutral-600">•</span>
-                  <a href="https://www.hvrai.app/" target="_blank" className="text-amber-400 hover:underline">Hvrai</a>
+                  <a href="https://www.hvrai.app/" target="_blank" rel="noreferrer" className="text-amber-400 hover:underline">Hvrai</a>
                   <span className="text-neutral-600">•</span>
-                  <a href="https://admin.bcappa.com/dashboard/" target="_blank" className="text-amber-400 hover:underline">BC Appa</a>
+                  <a href="https://admin.bcappa.com/dashboard/" target="_blank" rel="noreferrer" className="text-amber-400 hover:underline">BC Appa</a>
                   <span className="text-neutral-600">•</span>
-                  <a href="https://corp.sehatkahani.com/auth/login" target="_blank" className="text-amber-400 hover:underline">Sehat Kahani</a>
+                  <a href="https://corp.sehatkahani.com/auth/login" target="_blank" rel="noreferrer" className="text-amber-400 hover:underline">Sehat Kahani</a>
+                </div>
+              )}
+              {idx === 2 && (
+                <div className="flex flex-wrap gap-2 text-xs pt-1">
+                  <a href="https://taskaa-task.netlify.app/showDetails" target="_blank" rel="noreferrer" className="text-amber-400 hover:underline">Taska</a>
                 </div>
               )}
             </div>

@@ -222,25 +222,25 @@ export function HeroSection({ showVideoIntro = false }: HeroSectionProps) {
 
         {/* SECTION 4: Key Stats Bar */}
         <div className={`p-8 rounded-2xl border ${
-          isDarkMode ? "bg-neutral-900/80 border-neutral-800" : "bg-neutral-50 border-neutral-200"
+          isDarkMode ? "bg-neutral-900/80 border-neutral-800" : "bg-white border-neutral-200 shadow-sm"
         }`}>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center divide-y sm:divide-y-0 sm:divide-x divide-neutral-800/50">
+          <div className={`grid grid-cols-1 sm:grid-cols-3 gap-8 text-center divide-y sm:divide-y-0 sm:divide-x ${isDarkMode ? "divide-neutral-800/50" : "divide-neutral-200"}`}>
             <div className="pt-4 sm:pt-0 sm:px-4">
               <AnimatedCounter className="text-4xl sm:text-5xl font-black text-amber-500 font-mono" value={t.hero.stats.projects} />
-              <h4 className="text-sm font-bold text-neutral-200 mt-2">{t.hero.stats.projectsLabel}</h4>
-              <p className={`${themeStyles.muted} text-xs mt-1`}>{t.hero.stats.projectsSub}</p>
+              <h4 className={`text-sm font-bold mt-2 ${isDarkMode ? "text-neutral-200" : "text-neutral-900"}`}>{t.hero.stats.projectsLabel}</h4>
+              <p className={`text-xs mt-1 ${isDarkMode ? "text-neutral-400" : "text-neutral-600"}`}>{t.hero.stats.projectsSub}</p>
             </div>
 
             <div className="pt-6 sm:pt-0 sm:px-4">
               <AnimatedCounter className="text-4xl sm:text-5xl font-black text-amber-500 font-mono" value={t.hero.stats.experience} />
-              <h4 className="text-sm font-bold text-neutral-200 mt-2">{t.hero.stats.experienceLabel}</h4>
-              <p className={`${themeStyles.muted} text-xs mt-1`}>{t.hero.stats.experienceSub}</p>
+              <h4 className={`text-sm font-bold mt-2 ${isDarkMode ? "text-neutral-200" : "text-neutral-900"}`}>{t.hero.stats.experienceLabel}</h4>
+              <p className={`text-xs mt-1 ${isDarkMode ? "text-neutral-400" : "text-neutral-600"}`}>{t.hero.stats.experienceSub}</p>
             </div>
 
             <div className="pt-6 sm:pt-0 sm:px-4">
               <AnimatedCounter className="text-4xl sm:text-5xl font-black text-amber-500 font-mono" value={t.hero.stats.quality} />
-              <h4 className="text-sm font-bold text-neutral-200 mt-2">{t.hero.stats.qualityLabel}</h4>
-              <p className={`${themeStyles.muted} text-xs mt-1`}>{t.hero.stats.qualitySub}</p>
+              <h4 className={`text-sm font-bold mt-2 ${isDarkMode ? "text-neutral-200" : "text-neutral-900"}`}>{t.hero.stats.qualityLabel}</h4>
+              <p className={`text-xs mt-1 ${isDarkMode ? "text-neutral-400" : "text-neutral-600"}`}>{t.hero.stats.qualitySub}</p>
             </div>
           </div>
         </div>

@@ -130,14 +130,14 @@ export function ProjectsSection() {
             </h2>
           </div>
 
-          <div className="flex flex-wrap gap-1.5 p-1 rounded-xl bg-neutral-900 border border-neutral-800">
+          <div className={`flex flex-wrap gap-1.5 p-1 rounded-xl border ${isDarkMode ? "bg-neutral-900 border-neutral-800" : "bg-neutral-100 border-neutral-200"}`}>
             {["All", "Full Stack", "Web Apps", "Mobile Apps"].map((cat, idx) => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
                 className={`px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all ${activeCategory === cat
                   ? "bg-amber-500 text-black font-bold shadow-sm"
-                  : "text-neutral-400 hover:text-white"
+                  : isDarkMode ? "text-neutral-400 hover:text-white" : "text-neutral-600 hover:text-neutral-900"
                   }`}
               >
                 {t.portfolio.categories[idx] || cat}
@@ -176,7 +176,11 @@ export function ProjectsSection() {
                       <Badge
                         key={tag}
                         variant="outline"
-                        className="text-[10px] border-neutral-800 text-neutral-300 bg-neutral-900/60"
+                        className={`text-[10px] border ${
+                          isDarkMode
+                            ? "border-neutral-800 text-neutral-300 bg-neutral-900/60"
+                            : "border-neutral-200 text-neutral-700 bg-neutral-100"
+                        }`}
                       >
                         {tag}
                       </Badge>

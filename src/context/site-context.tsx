@@ -26,12 +26,15 @@ export function SiteProvider({ children }: { children: ReactNode }) {
       "(prefers-color-scheme: dark)"
     ).matches;
 
-    if (savedTheme === "dark" || (!savedTheme && systemPrefersDark) || !savedTheme) {
-      setIsDarkMode(true);
-      document.documentElement.classList.add("dark");
-    } else {
+    if (savedTheme === "light") {
       setIsDarkMode(false);
       document.documentElement.classList.remove("dark");
+    } else {
+      setIsDarkMode(true);
+      document.documentElement.classList.add("dark");
+      if (!savedTheme) {
+        localStorage.setItem("theme", "dark");
+      }
     }
 
     if (savedLang && translations[savedLang]) {
@@ -68,6 +71,19 @@ export function SiteProvider({ children }: { children: ReactNode }) {
   );
 }
 
+export function SiteContainer({ children }: { children: ReactNode }) {
+  const { isDarkMode } = useSite();
+  const themeStyles = useThemeStyles(isDarkMode);
+
+  return (
+    <div
+      className={`min-h-screen ${themeStyles.background} ${themeStyles.text} transition-colors duration-300 relative selection:bg-amber-500/20 selection:text-amber-400`}
+    >
+      {children}
+    </div>
+  );
+}
+
 export function useSite() {
   const ctx = useContext(SiteContext);
   if (!ctx) throw new Error("useSite must be used within SiteProvider");
@@ -87,7 +103,7 @@ export function useThemeStyles(isDarkMode: boolean) {
     techCardBg: isDarkMode
       ? "bg-[#111718] border border-neutral-800/80"
       : "bg-white border border-gray-200 shadow-sm",
-    muted: isDarkMode ? "text-neutral-400" : "text-gray-600",
+    muted: isDarkMode ? "text-neutral-400" : "text-neutral-600",
     border: isDarkMode ? "border-neutral-800/80" : "border-gray-200",
     header: isDarkMode ? "bg-[#0b0f12]/90 border-neutral-800/60" : "bg-white/90 border-gray-200",
   };

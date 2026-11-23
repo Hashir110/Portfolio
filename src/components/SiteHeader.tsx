@@ -40,7 +40,7 @@ export function SiteHeader() {
             alt="Muhammad Hashir Logo"
             className="h-9 sm:h-10 w-auto object-contain"
           />
-          <span className="font-bold whitespace-nowrap">Muhammad Hashir</span>
+          <span className={`font-bold whitespace-nowrap ${isDarkMode ? "text-white" : "text-neutral-900"}`}>Muhammad Hashir</span>
         </Link>
 
         <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6 rtl:space-x-reverse flex-shrink-0">
@@ -59,7 +59,9 @@ export function SiteHeader() {
           <div className="relative">
             <button
               onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-neutral-700/80 hover:border-amber-500/60 text-xs font-semibold text-neutral-300 hover:bg-neutral-800/60 transition-all cursor-pointer"
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border hover:border-amber-500/60 text-xs font-semibold transition-all cursor-pointer ${
+                isDarkMode ? "border-neutral-700/80 text-neutral-300 hover:bg-neutral-800/60" : "border-neutral-300 text-neutral-800 hover:bg-neutral-100"
+              }`}
               aria-label="Language Selector"
             >
               <span>{currentLangObj.flag}</span>
@@ -76,7 +78,7 @@ export function SiteHeader() {
                       changeLanguage(l.code);
                       setIsLangDropdownOpen(false);
                     }}
-                    className={`w-full px-3.5 py-2 text-left rtl:text-right text-xs font-medium flex items-center justify-between hover:bg-neutral-800/80 transition-colors cursor-pointer ${lang === l.code ? "text-amber-400 font-bold bg-amber-500/10" : "text-neutral-300"
+                    className={`w-full px-3.5 py-2 text-left rtl:text-right text-xs font-medium flex items-center justify-between transition-colors cursor-pointer ${lang === l.code ? "text-amber-500 font-bold bg-amber-500/10" : "text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800/80"
                       }`}
                   >
                     <span className="flex items-center gap-2">
@@ -93,7 +95,9 @@ export function SiteHeader() {
           <a
             href="/Muhammad Hashir'Resume.pdf"
             download="Muhammad Hashir'Resume.pdf"
-            className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-neutral-700/80 hover:border-amber-500/60 text-xs font-semibold whitespace-nowrap transition-all hover:bg-amber-500/10"
+            className={`hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border hover:border-amber-500/60 text-xs font-semibold whitespace-nowrap transition-all hover:bg-amber-500/10 ${
+              isDarkMode ? "border-neutral-700/80 text-neutral-200" : "border-neutral-300 text-neutral-800"
+            }`}
           >
             <Download className="w-3.5 h-3.5 text-amber-500" />
             <span>{t.nav.resume}</span>

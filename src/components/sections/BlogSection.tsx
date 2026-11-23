@@ -7,7 +7,7 @@ export function BlogSection() {
   const themeStyles = useThemeStyles(isDarkMode);
 
   return (
-    <section className={`py-24 px-6 border-b border-neutral-800/50 ${themeStyles.background} ${themeStyles.text}`}>
+    <section className={`py-24 px-6 border-b ${themeStyles.border} ${themeStyles.background} ${themeStyles.text}`}>
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-4">
           <div>
@@ -27,16 +27,16 @@ export function BlogSection() {
               <div>
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-[11px] font-mono text-amber-500">{post.readTime}</span>
-                  <span className="text-[10px] font-mono text-neutral-400 bg-neutral-800 px-2 py-0.5 rounded">{t.journal.comingSoon}</span>
+                  <span className={`text-[10px] font-mono px-2 py-0.5 rounded ${isDarkMode ? "text-neutral-400 bg-neutral-800" : "text-neutral-600 bg-neutral-100"}`}>{t.journal.comingSoon}</span>
                 </div>
-                <h3 className="text-base font-bold text-neutral-100 mb-2">
+                <h3 className={`text-base font-bold mb-2 ${isDarkMode ? "text-neutral-100" : "text-neutral-900"}`}>
                   {post.title}
                 </h3>
                 <p className={`${themeStyles.muted} text-xs leading-relaxed mb-6`}>
                   {post.desc}
                 </p>
               </div>
-              <span className="text-xs text-neutral-500 font-medium">{t.journal.inProgress}</span>
+              <span className={`text-xs font-medium ${isDarkMode ? "text-neutral-400" : "text-neutral-500"}`}>{t.journal.inProgress}</span>
             </div>
           ))}
         </div>

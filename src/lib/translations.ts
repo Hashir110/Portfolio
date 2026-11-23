@@ -172,7 +172,7 @@ export const translations = {
       tag: "CAREER",
       title: "Work Experience",
       present: "Present",
-      oneYear: "1 Year",
+      oneYear: "1.5 Year",
       threeMonths: "3 Months",
       roles: [
         {
@@ -184,7 +184,7 @@ export const translations = {
         {
           company: "Zetsol Technologies",
           role: "Full Stack Developer",
-          duration: "1 Year",
+          duration: "1.5 Year",
           desc: "Built production web and mobile products using NestJS, React/Next.js, and React Native. Contributed to live solutions:",
         },
         {
@@ -212,7 +212,7 @@ export const translations = {
           name: "Muhammad Salman Shaikh",
           role: "Big Brother",
           company: "Family",
-          quote: "“Having worked closely with Hashir on mobile application projects utilizing React Native and Expo, I have seen his rapid growth and solid problem-solving abilities firsthand. As a senior mobile developer, what stands out to me is his clean architectural mindset, quick adaptation to cross-platform challenges, and eagerness to write maintainable code. Hashir consistently delivers on frontend flows, API integrations, and mobile performance optimization with genuine dedication. He is an outstanding engineer to collaborate with, and I have full confidence in his ability to excel in any engineering team he joins. Highly recommended!”",
+          quote: "“Hashir is a dedicated and talented developer with strong React Native skills. He is a quick learner, a good problem solver, and a great team player. It was a pleasure working with him, and I highly recommend him.”",
         },
         {
           name: "Aeiyan Khan",
@@ -590,7 +590,7 @@ export const translations = {
           name: "Muhammad Salman Shaikh",
           role: "Hermano Mayor",
           company: "Familia",
-          quote: "“Habiendo trabajado estrechamente con Hashir en proyectos de aplicaciones móviles utilizando React Native y Expo, he presenciado de primera mano su rápido crecimiento y sus sólidas habilidades para resolver problemas. Como desarrollador móvil senior, lo que más destaca de él es su mentalidad de arquitectura limpia, su rápida adaptación a los desafíos multiplataforma y su entusiasmo por escribir código mantenible. Hashir cumple de manera constante con los flujos de frontend, integraciones de API y optimización del rendimiento móvil con verdadera dedicación. Es un ingeniero excepcional con quien colaborar y tengo plena confianza en su capacidad para destacar en cualquier equipo de ingeniería al que se una. ¡Muy recomendado!”",
+          quote: "“Hashir es un desarrollador dedicado y talentoso con sólidas habilidades en React Native. Aprende rápido, resuelve problemas con eficacia y es un excelente compañero de equipo. Fue un placer trabajar con él y lo recomiendo ampliamente.”",
         },
         {
           name: "Aeiyan Khan",
@@ -968,7 +968,7 @@ export const translations = {
           name: "Muhammad Salman Shaikh",
           role: "Großer Bruder",
           company: "Familie",
-          quote: "“Durch die enge Zusammenarbeit mit Hashir bei mobilen Anwendungsprojekten mit React Native und Expo habe ich sein schnelles Wachstum und seine hervorragenden Problemlösungsfähigkeiten aus erster Hand miterlebt. Als Senior Mobile Developer sticht für mich seine saubere Architekturdenkweise, die schnelle Anpassung an plattformübergreifende Herausforderungen und sein Eifer, wartbaren Code zu schreiben, hervor. Hashir liefert durchgehend Frontend-Flows, API-Integrationen und mobile Leistungsoptimierung mit echter Hingabe. Er ist ein fantastischer Ingenieur für die Zusammenarbeit, und ich habe volles Vertrauen in seine Fähigkeit, in jedem Entwicklungsteam hervorragende Leistungen zu erbringen. Sehr zu empfehlen!”",
+          quote: "“Hashir ist ein engagierter und talentierter Entwickler mit starken Fähigkeiten in React Native. Er lernt schnell, ist ein guter Problemlöser und ein großartiger Teamplayer. Es war eine Freude, mit ihm zusammenzuarbeiten, und ich kann ihn wärmstens empfehlen.”",
         },
         {
           name: "Aeiyan Khan",
@@ -1346,7 +1346,7 @@ export const translations = {
           name: "محمد الشيخ",
           role: "الأخ الأكبر",
           company: "العائلة",
-          quote: "“من خلال العمل عن كثب مع حاشر في مشاريع تطبيقات الجوال باستخدام React Native و Expo، شهدت نموه السريع وقدراته القوية في حل المشكلات بشكل مباشر. كمهندس تطبيقات جوال أول، ما يلفت انتباهي هو عقليته المعمارية النظيفة، وتكيفه السريع مع تحديات المنصات المتعددة، وحرصه على كتابة كود قابل للصيانة. يقدم حاشر باستمرار واجهات ممتازة، وتكاملات API، وتطوير أداء الجوال بتفانٍ حقيقي. إنه مهندس رائع للتعاون معه، ولدي ثقة كاملة في قدرته على التفوق في أي فريق هندسي ينضم إليه. أوصي به بشدة!”",
+          quote: "“حاشر مطور متفانٍ وموهوب يتمتع بمهارات قوية في React Native. إنه سريع التعلم، وحلال متميز للمشكلات، وعضو رائع في الفريق. كان من دواعي سروري العمل معه، وأوصي به بشدة.”",
         },
         {
           name: "Aeiyan Khan",
@@ -1724,7 +1724,7 @@ export const translations = {
           name: "محمد شیخ",
           role: "بڑا بھائی",
           company: "فیملی",
-          quote: "“حاشر کے ساتھ React Native اور Expo کا استعمال کرتے ہوئے موبائل ایپلیکیشن پراجیکٹس پر قریب سے کام کرتے ہوئے، میں نے اس کی تیز رفتاری سے ترقی اور مسائل حل کرنے کی صلاحیتوں کا خود مشاہدہ کیا ہے۔ ایک سینئر موبائل ڈیولپر کے طور پر، میرے لیے جو بات نمایاں ہے وہ اس کا کلین آرکیٹیکچرل ذہن، کراس پلیٹ فارم چیلنجز سے تیزی سے ہم آہنگ ہونا اور قابلِ دیکھ بھال (maintainable) کوڈ لکھنے کا شوق ہے۔ حاشر فرنٹ اینڈ فلو، API انٹیگریشنز اور موبائل پرفارمنس کی بہتری پر سچی لگن کے ساتھ کام کرتا ہے۔ وہ تعاون کے لیے ایک بہترین انجینئر ہے، اور مجھے اس کی صلاحیت پر پورا اعتماد ہے کہ وہ جس بھی انجینئرنگ ٹیم میں شامل ہوگا بہترین کارکردگی دکھائے گا۔ انتہائی سفارش کردہ!”",
+          quote: "“حاشر ایک باصلاحیت اور محنتی ڈیولپر ہے جس کی React Native میں مضبوط مہارت ہے۔ وہ چیزوں کو تیزی سے سیکھتا ہے، مسائل کو اچھے طریقے سے حل کرتا ہے اور ایک بہترین ٹیم پلیئر ہے۔ اس کے ساتھ کام کرنا انتہائی خوشگوار رہا، اور میں اس کی بھرپور سفارش کرتا ہوں۔”",
         },
         {
           name: "عیان خان",

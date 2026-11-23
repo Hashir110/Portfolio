@@ -73,7 +73,7 @@ export function SiteFooter() {
                 </span>
               </Link>
 
-              <p className={`${themeStyles.muted} text-xs sm:text-sm leading-relaxed max-w-sm`}>
+              <p className="text-neutral-400 text-xs sm:text-sm leading-relaxed max-w-sm">
                 {t.footer.bio}
               </p>
 

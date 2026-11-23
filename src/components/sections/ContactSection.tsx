@@ -74,36 +74,36 @@ export function ContactSection() {
 
             <div className="space-y-4 pt-2">
               <div className="flex items-center gap-3">
-                <div className="p-2.5 bg-neutral-800/80 rounded-lg text-amber-500">
+                <div className={`p-2.5 rounded-lg text-amber-500 ${isDarkMode ? "bg-neutral-800/80" : "bg-neutral-100"}`}>
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
-                  <span className="text-[11px] font-mono text-neutral-400 block uppercase">{t.contact.email}</span>
-                  <a href="mailto:contact@mhhashir.me" className="text-sm font-bold hover:text-amber-400 transition-colors">
+                  <span className={`text-[11px] font-mono block uppercase ${isDarkMode ? "text-neutral-400" : "text-neutral-600"}`}>{t.contact.email}</span>
+                  <a href="mailto:contact@mhhashir.me" className={`text-sm font-bold hover:text-amber-400 transition-colors ${isDarkMode ? "text-white" : "text-neutral-900"}`}>
                     contact@mhhashir.me
                   </a>
                 </div>
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="p-2.5 bg-neutral-800/80 rounded-lg text-amber-500">
+                <div className={`p-2.5 rounded-lg text-amber-500 ${isDarkMode ? "bg-neutral-800/80" : "bg-neutral-100"}`}>
                   <Phone className="w-4 h-4" />
                 </div>
                 <div>
-                  <span className="text-[11px] font-mono text-neutral-400 block uppercase">{t.contact.phone}</span>
-                  <a href="tel:+923142811181" className="text-sm font-bold hover:text-amber-400 transition-colors">
+                  <span className={`text-[11px] font-mono block uppercase ${isDarkMode ? "text-neutral-400" : "text-neutral-600"}`}>{t.contact.phone}</span>
+                  <a href="tel:+923142811181" className={`text-sm font-bold hover:text-amber-400 transition-colors ${isDarkMode ? "text-white" : "text-neutral-900"}`}>
                     +92-314-2811181
                   </a>
                 </div>
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="p-2.5 bg-neutral-800/80 rounded-lg text-amber-500">
+                <div className={`p-2.5 rounded-lg text-amber-500 ${isDarkMode ? "bg-neutral-800/80" : "bg-neutral-100"}`}>
                   <MapPin className="w-4 h-4" />
                 </div>
                 <div>
-                  <span className="text-[11px] font-mono text-neutral-400 block uppercase">{t.contact.location}</span>
-                  <span className="text-sm font-bold">
+                  <span className={`text-[11px] font-mono block uppercase ${isDarkMode ? "text-neutral-400" : "text-neutral-600"}`}>{t.contact.location}</span>
+                  <span className={`text-sm font-bold ${isDarkMode ? "text-white" : "text-neutral-900"}`}>
                     {t.contact.locationVal}
                   </span>
                 </div>
@@ -118,7 +118,7 @@ export function ContactSection() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label htmlFor="name" className="block text-xs font-mono text-neutral-400 uppercase mb-2">
+                    <label htmlFor="name" className={`block text-xs font-mono uppercase mb-2 ${isDarkMode ? "text-neutral-400" : "text-neutral-600"}`}>
                       {t.contact.yourName}
                     </label>
                     <input
@@ -129,12 +129,14 @@ export function ContactSection() {
                       onChange={handleChange}
                       required
                       placeholder="John Doe"
-                      className="w-full px-4 py-3 rounded-xl bg-neutral-900/80 border border-neutral-800 focus:border-amber-500 focus:outline-none text-sm transition-colors"
+                      className={`w-full px-4 py-3 rounded-xl border focus:border-amber-500 focus:outline-none text-sm transition-colors ${
+                        isDarkMode ? "bg-neutral-900/80 border-neutral-800 text-white placeholder:text-neutral-500" : "bg-neutral-50 border-neutral-200 text-neutral-900 placeholder:text-neutral-400"
+                      }`}
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-xs font-mono text-neutral-400 uppercase mb-2">
+                    <label htmlFor="email" className={`block text-xs font-mono uppercase mb-2 ${isDarkMode ? "text-neutral-400" : "text-neutral-600"}`}>
                       {t.contact.yourEmail}
                     </label>
                     <input
@@ -145,13 +147,15 @@ export function ContactSection() {
                       onChange={handleChange}
                       required
                       placeholder="john@example.com"
-                      className="w-full px-4 py-3 rounded-xl bg-neutral-900/80 border border-neutral-800 focus:border-amber-500 focus:outline-none text-sm transition-colors"
+                      className={`w-full px-4 py-3 rounded-xl border focus:border-amber-500 focus:outline-none text-sm transition-colors ${
+                        isDarkMode ? "bg-neutral-900/80 border-neutral-800 text-white placeholder:text-neutral-500" : "bg-neutral-50 border-neutral-200 text-neutral-900 placeholder:text-neutral-400"
+                      }`}
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-xs font-mono text-neutral-400 uppercase mb-2">
+                  <label htmlFor="message" className={`block text-xs font-mono uppercase mb-2 ${isDarkMode ? "text-neutral-400" : "text-neutral-600"}`}>
                     {t.contact.yourMessage}
                   </label>
                   <textarea
@@ -162,7 +166,9 @@ export function ContactSection() {
                     onChange={handleChange}
                     required
                     placeholder="Tell me about your project or inquiry..."
-                    className="w-full px-4 py-3 rounded-xl bg-neutral-900/80 border border-neutral-800 focus:border-amber-500 focus:outline-none text-sm transition-colors resize-none"
+                    className={`w-full px-4 py-3 rounded-xl border focus:border-amber-500 focus:outline-none text-sm transition-colors resize-none ${
+                      isDarkMode ? "bg-neutral-900/80 border-neutral-800 text-white placeholder:text-neutral-500" : "bg-neutral-50 border-neutral-200 text-neutral-900 placeholder:text-neutral-400"
+                    }`}
                   ></textarea>
                 </div>
 
